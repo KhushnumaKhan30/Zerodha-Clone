@@ -14,6 +14,7 @@ module.exports.Signup = async (req, res, next) => {
     res.cookie("token", token, {
       withCredentials: true,
       httpOnly: false,
+      sameSite: "none"
     });
     res
       .status(201)
@@ -43,6 +44,7 @@ module.exports.Login = async (req, res) => {
             return res.status(401).json({
                 message: "User not found",
                 success: false
+                sameSite: "none"
             });
         }
 

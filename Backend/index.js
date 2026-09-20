@@ -19,8 +19,8 @@ const app = express();
 app.use(cors({
     origin: function (origin, callback) {
         const allowedOrigins = [
-            "http://localhost:3000",
-            "http://localhost:3001"
+             "https://zerodha-clone-ep8a.onrender.com",
+            "https://zerodha-clone-dashboard-1ou3.onrender.com"
         ];
 
         if (!origin || allowedOrigins.includes(origin)) {
@@ -242,7 +242,10 @@ app.post("/signup", Signup);
 app.post("/login", Login);
 app.post("/logout", (req, res) => {
 
-    res.clearCookie("token");
+    res.clearCookie("token", {
+    httpOnly: true,
+    secure: true,
+    sameSite: "none"});
 
     res.status(200).json({
         success: true,

@@ -27,7 +27,7 @@ const Menu = () => {
         }
       );
 
-      window.location.href = "http://localhost:3000";
+      window.location.href = "https://zerodha-clone-ep8a.onrender.com";
 
     } catch (error) {
 

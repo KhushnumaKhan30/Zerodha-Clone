@@ -33,7 +33,7 @@ function SignUp() {
             alert(response.data.message);
 
             if (response.data.success) {
-            window.location.href = "http://localhost:3001";
+            window.location.href = "https://zerodha-clone-dashboard-1ou3.onrender.com";
         }
        
 

@@ -34,7 +34,7 @@ function ProtectedDashboard() {
         error.response?.data || error.message
       );
 
-      window.location.href = "http://localhost:3000/login";
+      window.location.href = "https://zerodha-clone-ep8a.onrender.com/login";
 
     })
     .finally(() => {
