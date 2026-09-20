@@ -31,7 +31,7 @@ function Login() {
         try {
 
             const response = await axios.post(
-                "http://localhost:3002/login",
+                "https://zerodha-clone-backend-tftb.onrender.com/login",
                 formData,
                 {
                     withCredentials: true,

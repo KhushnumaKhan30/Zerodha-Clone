@@ -22,7 +22,7 @@ function SignUp() {
 
         try {
             const response = await axios.post(
-                "http://localhost:3002/signup",
+                "https://zerodha-clone-backend-tftb.onrender.com/signup",
                 formData,
                 {
                     withCredentials: true,
