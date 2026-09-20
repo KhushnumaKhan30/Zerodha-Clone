@@ -20,7 +20,7 @@ const Menu = () => {
     try {
 
       await axios.post(
-        "http://localhost:3002/logout",
+       "https://zerodha-clone-backend-tftb.onrender.com/logout",
         {},
         {
           withCredentials: true,

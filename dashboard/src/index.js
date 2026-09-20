@@ -16,7 +16,7 @@ function ProtectedDashboard() {
   useEffect(() => {
 
     axios.get(
-      "http://localhost:3002/auth/check",
+      "https://zerodha-clone-backend-tftb.onrender.com/auth/check",
       {
         withCredentials: true
       }
