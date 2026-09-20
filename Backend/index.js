@@ -261,8 +261,8 @@ app.get("/auth/check", isAuthenticated, (req, res) => {
 
 });
 
-app.listen(3002,()=>{
-    console.log("App started");
+app.listen(PORT,()=>{
+    console.log(`server running on port ${PORT}`);
     mongoose.connect(url);
     console.log("Database connected")
 });
