@@ -68,11 +68,11 @@ module.exports.Login = async (req, res) => {
 
         console.log("Token created");
 
-        res.cookie("token", token, {
-            httpOnly: true,
-            sameSite: "lax",
-            secure: false
-        });
+       res.cookie("token", token, {
+    httpOnly: true,
+    secure: true,
+    sameSite: "none"
+});
 
         console.log("Sending login response...");
 
